@@ -1,0 +1,111 @@
+@import '../../global.scss';
+
+.aboutme{
+    background-color: $mainColor;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+    .top{
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+      h2{
+        margin-top: 10px;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+
+        @include mobile{
+            margin-top: 2px;
+            font-size: 25px;
+        }
+        
+     }
+
+     .textContainer{
+         margin-top: 25px;
+         width: 80%;
+
+         @include mobile{
+            margin-top: 10px;
+            width: 85%;
+            
+        }
+
+         p{
+             font-size: 16px;
+             letter-spacing: 0.75px;
+             line-height: 30px;
+             text-align: center;
+
+             @include mobile{
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: normal;
+                text-align: center;
+            }
+         }
+     }
+
+        
+    }
+    
+    .bottom{
+        flex: 0.5;
+        background-color: rgb(35, 39, 70);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2{
+            font-size: 50px;
+
+            @include mobile{
+                font-size: 25px;
+            }
+        }
+
+        h3{
+            font-size: 35px;
+        }
+
+        .techSkills{
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            
+            @include mobile{
+                margin-top: 20px;
+            }
+            
+            .skillsList{
+                margin: 15px;
+
+               img{
+                width: 100%;
+                height: 60px;
+
+                &:hover{
+                    height: 70px;
+                }
+                
+
+                @include mobile{
+                    height: 40px;
+                    margin: 0 auto;
+                }
+                } 
+            }     
+        }
+    } 
+}

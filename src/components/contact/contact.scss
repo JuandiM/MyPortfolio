@@ -1,0 +1,99 @@
+ @import '../../global.scss';
+ 
+ .contact{
+     background-color: white;
+     display: flex;
+
+     @include mobile{
+        flex-direction: column;
+    }
+
+     .left{
+         flex: 1;
+         overflow: hidden;
+
+         img{
+             height: 100%;
+
+             @include mobile{
+                 height: 80%;
+             }
+         }
+     }
+     .right{
+         flex: 1;
+         background-color: $mainColor;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         h2{
+             color: rgb(255, 213, 0);
+             font-size: 30px;
+
+         }
+
+         form{
+             width: 70%;
+             height: 80%;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: space-around;
+
+
+             input{
+                 background-color: $mainColor;
+                 color: white;
+                 width: 300px;
+                 height: 30px;
+                 font-size: 14px;
+                 border: none;
+                 border-bottom: 1px solid white;
+                 margin: 10px 0;
+
+                 @include mobile{
+                    width: 200px;
+                    height: 20px;
+                }
+             }
+
+             textarea{
+                 background-color: $mainColor;
+                 color: white;
+                 width: 300px;
+                 height: 200px;
+                 font-size: 14px;
+                 border: none;
+                 border-bottom: 1px solid white;
+
+                 @include mobile{
+                    width: 200px;
+                    height: 90px;
+                }
+             }
+
+             button{
+                 width: 150px;
+                 height: 40px;
+                 margin-top: 10px;
+                 color: $mainColor;
+                 background-color: rgb(255, 213, 0);
+                 border: none;
+                 border-radius: 10px;
+                 font-size: medium;
+                 font-weight: 500;
+                 cursor: pointer;
+
+                 &:focus{
+                     outline: none;
+                 }
+             }
+
+             span{
+                 color: green;
+             }
+         }
+     }
+ }
