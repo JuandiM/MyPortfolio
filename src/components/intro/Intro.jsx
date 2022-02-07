@@ -34,7 +34,7 @@ const Intro = () => {
         {/*<button type='button'></button>*/}
       </div>
       <a href='#aboutme' className='arrow'>
-        <img src='assets/down.png'></img>
+        <img src='assets/down.png' alt=''></img>
       </a>
     </div>
     

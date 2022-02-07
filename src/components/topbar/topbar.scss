@@ -21,14 +21,9 @@
             align-items: center;
 
             .logo{
-                font-size: 40px;
-                font-weight: 700;
-                text-decoration: none;
-                color: rgb(255, 213, 0);
-                margin-right: 40px;
+                width: 50px;
 
                 @include mobile {
-                    font-size: 25px;
                     margin-right: 20px;
                 }
             }
