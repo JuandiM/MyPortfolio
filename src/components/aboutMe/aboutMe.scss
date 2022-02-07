@@ -44,6 +44,10 @@
              line-height: 30px;
              text-align: center;
 
+             span{
+                 color: rgb(255, 213, 0);
+             }
+
              @include mobile{
                 font-size: 12px;
                 letter-spacing: 1px;

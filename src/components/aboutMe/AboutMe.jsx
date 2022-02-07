@@ -31,7 +31,7 @@ const AboutMe = () => {
       <div className="top">
           <h2 data-aos="fade-up" data-aos-once="false">About me</h2>
           <div data-aos="fade-left"className="textContainer">
-             <p>During the intensive 9-week bootcamp at the well-known Ironhack Global Tech School, I have acquired extensive knowledge of HTML, CSS and JavaScript, developing web applications and projects with Node, Express, MongoDB and React.
+             <p>During the intensive 9-week bootcamp at the well-known Ironhack Global Tech School, I have acquired extensive knowledge of <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>, developing web applications and projects with <span>Node</span>, <span>Express</span>, <span>MongoDB</span> and <span>React.</span>
                 <br/>
                 After more than 5 years of working experience in Digital Marketing field, I have made the leap to become a Full-Stack Developer. I'm an enthusiastic person, very motivated by this new change in my career.
                 Throughout my work experience, I have worked side by side as a team member, in addition to successfully performing various tasks independently.</p>
